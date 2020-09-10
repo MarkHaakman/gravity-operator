@@ -41,6 +41,8 @@ data:
     server {
       listen       80;
       server_name  localhost;
+      auth_basic "Administrator Login";
+      auth_basic_user_file .htpasswd;
 
       location / {
         root   /usr/share/nginx/html;

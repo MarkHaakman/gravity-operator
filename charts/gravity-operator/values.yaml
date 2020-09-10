@@ -14,7 +14,7 @@ operator:
     pullPolicy: IfNotPresent
   rolling: "25%"
   service:
-    type: ClusterIP
+    type: LoadBalancer
     port: 80
   resources: {}
 #    limits:
@@ -30,9 +30,10 @@ tags:
 admin:
   image:
     repository: markhaakman/gravity-admin
-    tag: v0.2.1.1
+    tag: v0.2.1.2
     pullPolicy: IfNotPresent
   service:
+    type: LoadBalancer
     port: 80
     nodePort: 30066
   resources: {}
