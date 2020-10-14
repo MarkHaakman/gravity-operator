@@ -4,7 +4,7 @@ fullnameOverride: ""
 deploymentRules:
   - group: "default"
     pipelines: ["*"]
-    image: "markhaakman/gravity:v0.9.70"
+    image: "markhaakman/gravity:v0.9.71.1"
     command: ["/gravity", "-config=/etc/gravity/config.json"]
 
 operator:
